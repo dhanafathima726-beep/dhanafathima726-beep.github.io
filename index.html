@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --text: #f8fafc;
+      --accent: #38bdf8;
+      --muted: #94a3b8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    header { text-align: center; padding: 3rem 0; }
+    h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .subtitle { color: var(--accent); font-weight: 600; font-size: 1.1rem; }
+    .bio { color: var(--muted); margin-top: 1rem; }
+    section { margin-top: 3rem; }
+    h2 { border-bottom: 2px solid var(--card-bg); padding-bottom: 0.5rem; margin-bottom: 1.5rem; }
+    .projects { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card {
+      background: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); }
+    .card h3 { color: var(--accent); margin-bottom: 0.5rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 1rem; }
+    .card a { color: var(--text); text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+    .card a:hover { text-decoration: underline; }
+    .contact { text-align: center; margin-top: 4rem; color: var(--muted); }
+    .contact a { color: var(--accent); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Your Name Dhana fathima</h1>
+      <p class="subtitle">Software Developer / Designer</p>
+      <p class="bio">Welcome to my portfolio! I build web applications and enjoy solving complex problems.</p>
+    </header>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        
+        <div class="card">
+          <h3>Project One</h3>
+          <p>A brief description of what this project does and the technology used to build it.</p>
+          <a href="https://github.com/yourusername/project-one" target="_blank">View Code &rarr;</a>
+        </div>
+
+        <div class="card">
+          <h3>Project Two</h3>
+          <p>A brief description of what this project does and the technology used to build it.</p>
+          <a href="https://github.com/yourusername/project-two" target="_blank">View Code &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out via <a href="mailto:your.email@example.com">Email</a> or connect on <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>.</p>
+    </section>
+  </div>
+
+</body>
+</html>
